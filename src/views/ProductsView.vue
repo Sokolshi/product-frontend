@@ -1,7 +1,11 @@
 <template>
   <h1>Products Page</h1>
 
-  <ProductCard v-for="product in products" :key="product.id" :product="product" />
+  <ProductCard
+    v-for="product in products"
+    :key="product._id"
+    :product="product"
+  />
 </template>
 
 <script setup>
