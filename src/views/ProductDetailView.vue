@@ -20,7 +20,9 @@ const product = ref(null)
 const route = useRoute()
 
 onMounted(async () => {
-  const res = await axios.get(`http://192.168.1.110:3000/products/${route.params.id}`)
+  const res = await axios.get(
+    `https://product-backend-2qik.onrender.com/products/${route.params.id}`,
+  )
 
   product.value = res.data
 })

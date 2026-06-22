@@ -25,7 +25,7 @@ function goDetail() {
 }
 
 async function deleteProduct() {
-  await axios.delete(`http://localhost:3000/products/${props.product._id}`)
+  await axios.delete(`https://product-backend-2qik.onrender.com/products/${props.product._id}`)
   router.push('/products')
 }
 

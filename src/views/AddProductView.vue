@@ -27,7 +27,7 @@ const Үнэ = ref('')
 const router = useRouter()
 
 async function addProduct() {
-  await axios.post('http://localhost:3000/products', {
+  await axios.post('https://product-backend-2qik.onrender.com/products', {
     name: Нэр.value,
     price: Number(Үнэ.value),
   })

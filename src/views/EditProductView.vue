@@ -29,7 +29,9 @@ const price = ref('')
 const image = ref('')
 
 onMounted(async () => {
-  const res = await axios.get(`http://localhost:3000/products/${route.params.id}`)
+  const res = await axios.get(
+    `https://product-backend-2qik.onrender.com/products/${route.params.id}`,
+  )
 
   name.value = res.data.name
   price.value = res.data.price
@@ -37,7 +39,7 @@ onMounted(async () => {
 })
 
 async function updateProduct() {
-  await axios.put(`http://localhost:3000/products/${route.params.id}`, {
+  await axios.put(`https://product-backend-2qik.onrender.com/products/${route.params.id}`, {
     name: name.value,
     price: Number(price.value),
     image: image.value,
