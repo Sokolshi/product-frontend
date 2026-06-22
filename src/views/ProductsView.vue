@@ -1,5 +1,5 @@
 <template>
-  <h1>Products Page</h1>
+  <h1>Барааны хуудас</h1>
 
   <ProductCard v-for="product in products" :key="product._id" :product="product" />
 </template>

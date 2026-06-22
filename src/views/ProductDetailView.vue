@@ -3,8 +3,6 @@
     <h1>{{ product.name }}</h1>
 
     <p>Price: {{ product.price }}₮</p>
-
-    <p>Image: {{ product.image }}</p>
   </div>
 
   <h2 v-else>Loading...</h2>

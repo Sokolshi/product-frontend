@@ -9,10 +9,6 @@
 
   <br /><br />
 
-  <input v-model="image" />
-
-  <br /><br />
-
   <button @click="updateProduct">Save</button>
 </template>
 
@@ -26,7 +22,6 @@ const router = useRouter()
 
 const name = ref('')
 const price = ref('')
-const image = ref('')
 
 onMounted(async () => {
   const res = await axios.get(
@@ -35,14 +30,12 @@ onMounted(async () => {
 
   name.value = res.data.name
   price.value = res.data.price
-  image.value = res.data.image
 })
 
 async function updateProduct() {
   await axios.put(`https://product-backend-2qik.onrender.com/products/${route.params.id}`, {
     name: name.value,
     price: Number(price.value),
-    image: image.value,
   })
 
   router.push('/products')
