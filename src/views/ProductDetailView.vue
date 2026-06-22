@@ -1,0 +1,27 @@
+<template>
+  <div v-if="product">
+    <h1>{{ product.name }}</h1>
+
+    <p>Price: {{ product.price }}₮</p>
+
+    <p>Image: {{ product.image }}</p>
+  </div>
+
+  <h2 v-else>Loading...</h2>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+import { useRoute } from 'vue-router'
+
+const product = ref(null)
+
+const route = useRoute()
+
+onMounted(async () => {
+  const res = await axios.get(`http://192.168.1.110:3000/products/${route.params.id}`)
+
+  product.value = res.data
+})
+</script>
