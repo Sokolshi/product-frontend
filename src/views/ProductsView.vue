@@ -44,7 +44,7 @@ onMounted(async () => {
   }
 
   .page {
-    padding: 15px;
+    padding: 10px;
   }
 }
 </style>

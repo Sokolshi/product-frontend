@@ -12,8 +12,9 @@
 
 <style scoped>
 .navbar {
-  width: 1800px;
-  height: 300px;
+  width: 100%;
+  max-width: 1800px;
+  min-height: 300px;
   margin: 40px auto;
   padding: 50px;
   background: #bdc99b;
@@ -58,6 +59,8 @@ a {
   .navbar {
     width: 100%;
     padding: 20px;
+    min-height:auto;
+      padding:20px;
   }
 
   .links {
@@ -67,7 +70,9 @@ a {
 
   a {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
+    height:80px;
+    font-size:18px;
   }
 }
 </style>

@@ -52,7 +52,7 @@ function editProduct() {
 
 .product-image {
   width: 100%;
-  height: 500px;
+  height: 260px;
   object-fit: cover;
 }
 
@@ -61,7 +61,7 @@ function editProduct() {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -103,6 +103,14 @@ button:hover {
 
   .buttons {
     flex-direction: column;
+  }
+
+  .price{
+    font-size:20px;
+  }
+
+  button{
+    font-size:16px;
   }
 }
 </style>

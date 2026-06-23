@@ -57,4 +57,16 @@ a {
 
   transition: 0.3s;
 }
+
+@media (max-width:768px){
+
+  h1{
+      font-size:24px;
+  }
+
+  p{
+      font-size:16px;
+  }
+
+}
 </style>
