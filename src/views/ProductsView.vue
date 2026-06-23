@@ -1,7 +1,11 @@
 <template>
-  <h1>Барааны хуудас</h1>
+  <div class="page">
+    <h1>Барааны хуудас</h1>
 
-  <ProductCard v-for="product in products" :key="product._id" :product="product" />
+    <div class="products-grid">
+      <ProductCard v-for="product in products" :key="product._id" :product="product" />
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -19,3 +23,21 @@ onMounted(async () => {
   products.value = response.data
 })
 </script>
+
+<style scoped>
+.page {
+  padding: 30px;
+  max-width: none;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+</style>
