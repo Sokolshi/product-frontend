@@ -31,13 +31,20 @@ onMounted(async () => {
   margin: 0;
 }
 
-h1 {
-  margin-bottom: 25px;
-}
-
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+
+/* Энийг хамгийн доор нэм */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 15px;
+  }
 }
 </style>

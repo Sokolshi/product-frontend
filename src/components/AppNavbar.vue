@@ -54,4 +54,20 @@ a {
 
   box-shadow: 2px 2px 2px 1px rgba(46, 71, 49, 0.2);
 }
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    width: 100%;
+    max-width: 280px;
+  }
+}
 </style>

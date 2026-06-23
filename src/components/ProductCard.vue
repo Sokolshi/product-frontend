@@ -91,4 +91,18 @@ button {
 button:hover {
   background: #7d6cc8;
 }
+
+@media (max-width: 768px) {
+  .product-image {
+    height: 260px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
 </style>
