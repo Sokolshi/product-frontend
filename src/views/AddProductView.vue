@@ -31,6 +31,10 @@ async function addProduct() {
 
   alert('Амжилттай нэмэгдлээ')
 }
+//const response = await axios.get('/products')--> await =="Хүлээ. Backend-ээс хариу ирсний дараа дараагийн мөрөө ажиллуул."
+
+
+
 </script>
 
 <style scoped>

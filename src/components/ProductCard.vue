@@ -33,7 +33,7 @@ async function deleteProduct() {
   }
 
   await axios.delete(`https://product-backend-2qik.onrender.com/products/${props.product._id}`)
-
+/* HTTP DELETE хүсэлт backend рүү явуулна. */
   window.location.reload()
 }
 
