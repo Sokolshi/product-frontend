@@ -1,7 +1,8 @@
 <template>
   <div class="card">
-    <img :src="product.image || 'https://picsum.photos/500/300'" alt="" class="product-image" />
-
+    <img :src="product.image"
+        alt=""
+        class="product-image" />
     <div class="card-body">
       <h3>{{ product.name }}</h3>
 
